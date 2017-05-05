@@ -1,0 +1,16 @@
+TODOs:
+------
+
+
+FERTIG HTML-Seite mit bootstrap
+OFFEN nginx in docker
+  -> statisches HTML (+js +css) ausliefern
+
+OFFEN menu + main-content über ssi nachladen (Datei)
+OFFEN menu
+  -> bleibt konstant
+  -> main-content über ssi von 2. nginx (docker, statisches HTML)
+OFFEN Top-Level Menü
+OFFEN menu über ajax anpassen
+  -> js vom 2. nginx
+  -> linkes Menü je nach Top-Level Klick ändern
