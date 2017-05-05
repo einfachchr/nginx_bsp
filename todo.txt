@@ -3,7 +3,7 @@ TODOs:
 
 
 FERTIG HTML-Seite mit bootstrap
-OFFEN nginx in docker
+FERTIG nginx in docker
   -> statisches HTML (+js +css) ausliefern
 
 OFFEN menu + main-content über ssi nachladen (Datei)

@@ -1,0 +1,8 @@
+
+# Build
+sudo docker build -t nginx-bsp-n1 .
+
+# Run image
+#    localhost:8080 -> nginx Port 80 gemappt
+#    aufgrund des HTML-Verzeichnisses liegt die Seite unter localhost:8080/html
+sudo docker run --name nginx-n1 -p 8080:80 -d nginx-bsp-n1
