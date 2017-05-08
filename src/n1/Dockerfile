@@ -4,4 +4,4 @@ FROM nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # copy html content
-COPY static /var/www/
+COPY static /data/www/

@@ -7,6 +7,15 @@ sudo docker build -t nginx-bsp-n1 .
 #    aufgrund des HTML-Verzeichnisses liegt die Seite unter localhost:8080/html
 sudo docker run --name nginx-n1 -p 8080:80 -d nginx-bsp-n1
 
+# --rm  remove container (geht nur ohne --name)
+sudo docker run --rm  -p 8080:80 -it nginx-bsp-n1
+
+# eine Bash in dem Container starten
+sudo docker run --rm -p 8080:80 -it nginx-bsp-n1 bash
+
+# lokale Verzeichnis in den Container mounten (/data/src)
+sudo docker run --rm -p 8080:80 -v /home/chr/projects/nginx_bsp/src/n1:/data/src -it nginx-bsp-n1 bash
+
 
 # remove
 sudo docker stop nginx-n1
