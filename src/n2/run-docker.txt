@@ -1,0 +1,23 @@
+
+# Build
+sudo docker build -t nginx-bsp-n2 .
+
+# Run image
+#    localhost:8080 -> nginx Port 80 gemappt
+#    aufgrund des HTML-Verzeichnisses liegt die Seite unter localhost:8080/html
+sudo docker run --name nginx-n2 -p 8080:80 -d nginx-bsp-n2
+
+# --rm  remove container (geht nur ohne --name)
+sudo docker run --rm -d -p 8081:80 -it nginx-bsp-n2
+
+# eine Bash in dem Container starten
+sudo docker run --rm -p 8081:80 -it nginx-bsp-n2 bash
+
+# lokale Verzeichnis in den Container mounten (/data/src)
+sudo docker run --rm -p 8080:80 -v /home/chr/projects/nginx_bsp/src/n1:/data/src -it nginx-bsp-n2 bash
+
+
+# remove
+sudo docker stop nginx-n2
+sudo docker rm nginx-n2
+sudo docker rmi nginx-bsp-n2

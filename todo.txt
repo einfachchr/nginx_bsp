@@ -1,15 +1,19 @@
 TODOs:
 ------
 
-
 FERTIG HTML-Seite mit bootstrap
 FERTIG nginx in docker
   -> statisches HTML (+js +css) ausliefern
-
 FERTIG menu + main-content über ssi nachladen (Datei)
-OFFEN menu
-  -> bleibt konstant
-  -> main-content über ssi von 2. nginx (docker, statisches HTML)
+
+OFFEN main-content über ssi von 2. nginx (docker, statisches HTML)
+    -> menu konstant
+    FERTIG 2. nginx mit statischer Seite aufsetzen
+    FERTIG n2 in docker packen
+    -> Config von n1 an die neuere von n2 anpassen (nginx-Start)
+    -> Linken von Containern nachlesen
+    -> Erreichbarkeit ersteinmal über Ports (später URLs, können beide auf ihren Port 80 lauschen?)
+
 OFFEN Top-Level Menü
 OFFEN menu über ajax anpassen
   -> js vom 2. nginx
