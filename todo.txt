@@ -12,8 +12,7 @@ OFFEN main-content über ssi von 2. nginx (docker, statisches HTML)
     FERTIG n2 in docker packen
     FERTIG Config von n1 an die neuere von n2 anpassen (nginx-Start)
     FERTIG Linken von Containern nachlesen
-        
-    -> Erreichbarkeit ersteinmal über Ports (später URLs, können beide auf ihren Port 80 lauschen?)
+    FERTIG Erreichbarkeit ersteinmal über Ports (später URLs, können beide auf ihren Port 80 lauschen?)
 
 OFFEN in aws deployen
 OFFEN Top-Level Menü

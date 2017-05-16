@@ -17,6 +17,10 @@ sudo docker run --rm -p 8081:80 -it nginx-bsp-n2 bash
 # lokale Verzeichnis in den Container mounten (/data/src)
 sudo docker run --rm -p 8080:80 -v /home/chr/projects/nginx_bsp/src/n1:/data/src -it nginx-bsp-n2 bash
 
+# mit --name starten, um zwei Container zu verlinken:
+sudo docker run --rm -d -p 8081:80 --name n2 nginx-bsp-n2
+
+
 
 # remove
 sudo docker stop nginx-n2
