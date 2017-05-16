@@ -16,6 +16,9 @@ sudo docker run --rm -p 8080:80 -it nginx-bsp-n1 bash
 # lokale Verzeichnis in den Container mounten (/data/src)
 sudo docker run --rm -p 8080:80 -v /home/chr/projects/nginx_bsp/src/n1:/data/src -it nginx-bsp-n1 bash
 
+# Linken der Container:
+sudo docker run --rm -d -p 8080:80 --name n1 --link n2 nginx-bsp-n1
+
 
 # remove
 sudo docker stop nginx-n1

@@ -11,12 +11,8 @@ OFFEN main-content über ssi von 2. nginx (docker, statisches HTML)
     FERTIG 2. nginx mit statischer Seite aufsetzen
     FERTIG n2 in docker packen
     FERTIG Config von n1 an die neuere von n2 anpassen (nginx-Start)
-    -> Linken von Containern nachlesen
-        https://deis.com/blog/2016/connecting-docker-containers-1/
-          Server: sudo docker run -itd --name=server3 server_img /bin/bash
-          Client: sudo docker run -itd --link server3 --name=client3 client_img /bin/bash
-                  curl server3
-
+    FERTIG Linken von Containern nachlesen
+        
     -> Erreichbarkeit ersteinmal über Ports (später URLs, können beide auf ihren Port 80 lauschen?)
 
 OFFEN in aws deployen
