@@ -8,6 +8,7 @@ sudo docker build -t nginx-bsp-n2 .
 sudo docker run --name nginx-n2 -p 8080:80 -d nginx-bsp-n2
 
 # --rm  remove container (geht nur ohne --name)
+# -d    daemon, sonst blockt der Aufruf, laufende Container über sudo docker ps
 sudo docker run --rm -d -p 8081:80 -it nginx-bsp-n2
 
 # eine Bash in dem Container starten
