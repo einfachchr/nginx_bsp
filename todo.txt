@@ -19,8 +19,8 @@ OFFEN Architektur
   FERTIG n1 mit 3 Bereichen: top bar, left bar, content
   FERTIG Top Bar über eigenen nginx & ssi include bereitstellen
   FERTIG Left Bar über eigenen nginx & ssi include bereitstellen
-  OFFEN 1. Content-nginx aufsetzen
-  OFFEN 2. Content-nginx aufsetzen
+  FERTIG 1. Content-nginx aufsetzen
+  FERTIG 2. Content-nginx aufsetzen
   OFFEN Links in Top Bar, um zwischen Content Servern umzuschalten
   OFFEN 1 Skript, um zu deployen (compose?)
 
