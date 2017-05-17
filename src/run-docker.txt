@@ -21,6 +21,18 @@ sudo docker run --rm -d -p 8081:80 --name top-bar nginx-top-bar
 
 
 #
+# ---- left-bar
+#
+cd left-bar
+
+# Build
+sudo docker build -t nginx-left-bar .
+
+# Run image
+sudo docker run --rm -d -p 8082:80 --name left-bar nginx-left-bar
+
+
+#
 # ---- front
 #
 cd front
@@ -29,7 +41,7 @@ cd front
 sudo docker build -t nginx-front .
 
 # Run image
-sudo docker run --rm -d -p 8080:80 --name front --link top-bar nginx-front
+sudo docker run --rm -d -p 8080:80 --name front --link top-bar --link left-bar nginx-front
 
 
 # Für die Entwicklung
