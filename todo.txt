@@ -15,14 +15,14 @@ FERTIG main-content über ssi von 2. nginx (docker, statisches HTML)
     FERTIG Erreichbarkeit ersteinmal über Ports (später URLs, können beide auf ihren Port 80 lauschen?)
 
 OFFEN Architektur
-  OFFEN 1 Befehlssammlung
-  OFFEN n1 mit 3 Bereichen: top bar, left bar, content
-  OFFEN Top Bar über eigenen nginx & ssi include bereitstellen
+  FERTIG 1 Befehlssammlung
+  FERTIG n1 mit 3 Bereichen: top bar, left bar, content
+  FERTIG Top Bar über eigenen nginx & ssi include bereitstellen
   OFFEN Left Bar über eigenen nginx & ssi include bereitstellen
   OFFEN 1. Content-nginx aufsetzen
   OFFEN 2. Content-nginx aufsetzen
   OFFEN Links in Top Bar, um zwischen Content Servern umzuschalten
-  OFFEN 1 Skript, um zu deployen
+  OFFEN 1 Skript, um zu deployen (compose?)
 
 OFFEN in aws deployen
 OFFEN menu über ajax anpassen

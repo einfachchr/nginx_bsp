@@ -1,0 +1,37 @@
+
+# remove
+sudo docker stop n1
+sudo docker rm n1
+
+
+
+
+
+
+#
+# ---- top-bar
+#
+cd top-bar
+
+# Build
+sudo docker build -t nginx-top-bar .
+
+# Run image
+sudo docker run --rm -d -p 8081:80 --name top-bar nginx-top-bar
+
+
+#
+# ---- front
+#
+cd front
+
+# Build
+sudo docker build -t nginx-front .
+
+# Run image
+sudo docker run --rm -d -p 8080:80 --name front --link top-bar nginx-front
+
+
+# Für die Entwicklung
+# lokale Verzeichnis in den Container mounten (/data/src)
+sudo docker run --rm -p 8080:80 -v /home/chr/projects/nginx_bsp/src/front:/data/src -it nginx-front bash
