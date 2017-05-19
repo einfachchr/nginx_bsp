@@ -22,8 +22,16 @@ OFFEN Architektur
   FERTIG 1. Content-nginx aufsetzen
   FERTIG 2. Content-nginx aufsetzen
   OFFEN Links in Top Bar, um zwischen Content Servern umzuschalten
-  OFFEN 1 Skript, um zu deployen (compose?)
 
+
+OFFEN AJAX
+  OFFEN front-ajax mit Platzhaltern bauen
+  OFFEN top-bar über ajax laden
+  OFFEN left-bar über ajax laden
+  OFFEN content bei Klick in top-bar über ajax tauschen
+
+
+OFFEN 1 Skript, um zu deployen (compose?)
 OFFEN in aws deployen
 OFFEN menu über ajax anpassen
   -> js vom content nginx
